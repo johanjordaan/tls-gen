@@ -1,0 +1,9 @@
+logs
+*.log
+.grunt
+node_modules
+bower_components
+grammar
+test
+lib
+main

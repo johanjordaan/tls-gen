@@ -1,0 +1,18 @@
+{
+  "name": "tls",
+  "description": "tls rfc5246 parser and code generator",
+  "author": "Johan Jordaan <me@here.com>",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "ejs": "*",
+    "mkdirp": "~0.5.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-mocha-test": "~0.10.2",
+    "grunt-shell": "~0.6.4",
+    "grunt-contrib-copy": "*"
+  },
+  "engine": "node >= 0.4.1"
+}
