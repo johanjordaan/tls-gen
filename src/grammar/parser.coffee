@@ -12,11 +12,13 @@ class Enum
 
     @max_value = 0  
     last_value = 0
-    @values = {} 
+    @values_by_name = {}
+    @values = [] 
     for value in init.values
       if value.max_value?
         @max_value = value.max_value
       else
+        @values.push value
         # If value is not defined then increment the last value
         if !value.value?
           last_value = last_value + 1
@@ -24,7 +26,7 @@ class Enum
         else
           last_value = value.value
         
-        @values[value.name] = value.value  
+        @values_by_name[value.name] = value.value  
         if value.value > @max_value
           @max_value = value
 

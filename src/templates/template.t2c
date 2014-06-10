@@ -1,0 +1,33 @@
+#| using System;
+#|
+#|
+#| namespace TLS
+#| {
+
+for e in ctx.enums
+  z = []
+  for v in e.values 
+    z.push "tls_#{v.name}=#{v.value}"
+
+  #|   public enum #{e.name}Enum { #{z.join(',')} }; 
+  #|   public class #{e.name}
+  #|   {
+  #|     public #{e.name}Enum value; 
+  #|     public int num_bytes = 1;
+  #|
+  #|     public int Load(byte[] buffer,int offset) {
+  #|       var value = BufferTools.ReadNumberFromBuffer(buffer,offset,num_bytes);       
+  #|       if(Enum.IsDefined(typeof(#{e.name}Enum), value)) {
+  #|         this.value = (#{e.name}Enum)value;
+  #|       }
+  #|       return num_bytes; 
+  #|     }
+
+
+  #|   }
+  #|
+
+#| }
+
+
+
