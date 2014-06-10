@@ -31,6 +31,7 @@ case                            return 'CASE';
 uint8                           return 'UINT8';
 uint16                          return 'UINT16';  
 uint24                          return 'UINT24'; 
+uint32                          return 'UINT32'; 
 opaque                          return 'OPAQUE';
 
 "digitally-signed"              return 'DIGITALLY-SIGNED'; 
@@ -310,5 +311,6 @@ base_type
     : UINT8
     | UINT16
     | UINT24
+    | UINT32
     | OPAQUE
     ;

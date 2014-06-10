@@ -15,10 +15,10 @@ describe 'parser', (done) ->
       done()
 
   it 'should extract the correct number of enums from the protocol definition', ()->
-    context.enums.length.should.equal 12
+    context.enums.length.should.equal 17
 
   it 'should extract the correct number of enums from the protocol definition', ()->
-    _.keys(context.enums_by_name).length.should.equal 12
+    _.keys(context.enums_by_name).length.should.equal 17
 
 
     #for e in context.enums

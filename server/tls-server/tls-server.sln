@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-server", "tls-server\tls-server.csproj", "{40F52AC9-4765-465A-8D4B-42175622045E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-lib", "..\tls-lib\tls-lib.csproj", "{4863C80A-FE6A-4A49-94F0-945444841FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tls-lib-tests", "..\tls-lib-tests\tls-lib-tests.csproj", "{7CA1E012-2E64-48B1-ABC9-2068C2AB9992}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +17,14 @@ Global
 		{40F52AC9-4765-465A-8D4B-42175622045E}.Debug|x86.Build.0 = Debug|x86
 		{40F52AC9-4765-465A-8D4B-42175622045E}.Release|x86.ActiveCfg = Release|x86
 		{40F52AC9-4765-465A-8D4B-42175622045E}.Release|x86.Build.0 = Release|x86
+		{4863C80A-FE6A-4A49-94F0-945444841FFC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4863C80A-FE6A-4A49-94F0-945444841FFC}.Debug|x86.Build.0 = Debug|Any CPU
+		{4863C80A-FE6A-4A49-94F0-945444841FFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{4863C80A-FE6A-4A49-94F0-945444841FFC}.Release|x86.Build.0 = Release|Any CPU
+		{7CA1E012-2E64-48B1-ABC9-2068C2AB9992}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CA1E012-2E64-48B1-ABC9-2068C2AB9992}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CA1E012-2E64-48B1-ABC9-2068C2AB9992}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CA1E012-2E64-48B1-ABC9-2068C2AB9992}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = tls-server\tls-server.csproj

@@ -25,6 +25,16 @@ struct {
     opaque fragment[TLSCompressed.length];
 } TLSCompressed;
 
+enum { server, client } ConnectionEnd;
+
+enum { tls_prf_sha256 } PRFAlgorithm;
+
+enum { null, rc4, three_des, aes } BulkCipherAlgorithm;
+
+enum { stream, block, aead } CipherType;
+
+enum { null, hmac_md5, hmac_sha1, hmac_sha256,hmac_sha384, hmac_sha512} MACAlgorithm;
+
 struct {
     ConnectionEnd          entity;
     PRFAlgorithm           prf_algorithm;
